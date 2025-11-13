@@ -1,8 +1,14 @@
+DROP TABLE IF EXISTS ciudades_grafo;
+DROP TABLE IF EXISTS empleados;
+DROP TABLE IF EXISTS productos;
+
+
 CREATE TABLE productos (
     id        SERIAL PRIMARY KEY,
     nombre    TEXT NOT NULL,
     etiquetas TEXT[] NOT NULL
 );
+
 
 CREATE TABLE empleados (
     id      SERIAL PRIMARY KEY,
